@@ -5,10 +5,9 @@
 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-
-%if (username != None):
-Welcome {{username}}        <a href="/logout">Logout</a>
-%end
+	  {% if (username != None) %}
+	  Welcome {{username}}        <a href="/logout">Logout</a>
+	  {% end %}
 
 	<div class="container">
 		<h1>Example of a blog</h1>
